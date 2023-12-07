@@ -6,9 +6,10 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
-      "dist"
+    "dist"
   ],
   "scripts": {
+    "start": "npx ts-node ./src/index.ts",
     "build": "tsup",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,6 +17,10 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.10.4",
-    "tsup": "^8.0.1"
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@octokit/rest": "^20.0.2"
   }
 }
