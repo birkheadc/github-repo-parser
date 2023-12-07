@@ -2,10 +2,20 @@
   "name": "@birkheadc/github-repo-parser",
   "version": "1.0.0",
   "description": "Parses a specified user's public repositories for a specific file structure and uses that data to create an array of objects. Essentially, this facilitates the creation of a more advanced, API-legible README that can be stored directly in a project's repository.",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+      "dist"
+  ],
   "scripts": {
+    "build": "tsup",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Colby Birkhead",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "tsup": "^8.0.1"
+  }
 }
