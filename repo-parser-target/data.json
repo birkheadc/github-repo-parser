@@ -1,5 +1,43 @@
 {
   "title": "GithubRepoParser",
   "source": "https://github.com/birkheadc/github-repo-parser",
-  "site": "https://github.com/birkheadc/github-repo-parser"
+  "site": "https://github.com/birkheadc/github-repo-parser",
+  "descriptions": {
+    "shortDescriptions": [
+      {
+        "language": "en",
+        "content": "Parses a user's public repositories for a specific folder, and uses that folder to gather custom data about that repository in an API-friendly format."
+      },
+      {
+        "language": "jp",
+        "content": "日本語はまだ書いてません"
+      }
+    ],
+    "longDescriptions": [
+      {
+        "language": "en",
+        "content": "I haven't written a longer description yet..."
+      },
+      {
+        "language": "jp",
+        "content": "日本語はまだ書いてません"
+      }
+    ],
+    "bulletPoints": [
+      {
+        "language": "en",
+        "content": [
+          "Bullet Point 1",
+          "Bullet Point 2",
+          "Bullet Point 3"
+        ]
+      }
+    ]
+  },
+  "technologies": [
+    "Node",
+    "NPM",
+    "TypeScript",
+    "Github API"
+  ]
 }

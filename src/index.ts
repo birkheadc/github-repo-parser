@@ -1,13 +1,9 @@
 import { GithubRepoParser } from "./githubRepoParser"
 import { GithubRepoParserConfig } from "./githubRepoParserConfig";
+import { GithubRepoParserResult  } from "./githubRepoParserResult";
 
 export {
   GithubRepoParser,
-  GithubRepoParserConfig
+  GithubRepoParserConfig,
+  GithubRepoParserResult
 };
-
-(async function awaitMe() {
-  const parser = new GithubRepoParser({ username: 'birkheadc' });
-  const results = await parser.getAllData([ 'images' ]);
-  console.log("Results: ", results);
-})();

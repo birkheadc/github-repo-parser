@@ -1,8 +1,9 @@
 import { GithubRepoParserConfig } from "./githubRepoParserConfig";
 import { GithubRepoParserResult } from "./githubRepoParserResult";
+import fetch from "node-fetch";
 
 export class GithubRepoParser {
-  config: GithubRepoParserConfig;
+  private readonly config: GithubRepoParserConfig;
   constructor(config: GithubRepoParserConfig) {
     this.config = {
       username: config.username,
@@ -44,7 +45,7 @@ export class GithubRepoParser {
       return undefined;
     }
 
-    const data = await response.json();
+    const data: any = await response.json();
     if (data.items == null || data.items[0] == null) {
       console.log("Data was of an unexpected format: ", data);
       return undefined;
@@ -87,7 +88,7 @@ export class GithubRepoParser {
     return result;
   }
 
-  async getJsonFromRepoParserFolder(data: any): Promise<any | undefined> {
+  private async getJsonFromRepoParserFolder(data: any): Promise<any | undefined> {
     const jsonUrl = data.find((d: any) => d.name === 'data.json').download_url;
     const response = await fetch(jsonUrl, {
       method: 'GET'
@@ -103,7 +104,7 @@ export class GithubRepoParser {
     return await response.json();
   }
 
-  async getFilesFromRepo(repoName: string, fileTypes: string[]): Promise<{[key: string]: string[]}> {
+  private async getFilesFromRepo(repoName: string, fileTypes: string[]): Promise<{[key: string]: string[]}> {
     const files = {};
     for (let j = 0; j < fileTypes.length; j++) {
       const fileType = fileTypes[j];
@@ -112,7 +113,7 @@ export class GithubRepoParser {
         method: 'GET'
       });
       if (response.ok) {
-        const data = await response.json();
+        const data: any = await response.json();
         if (data == null || data[0] == null) {
           continue;
         }
