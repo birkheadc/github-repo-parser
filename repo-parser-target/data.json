@@ -12,26 +12,34 @@
       },
       {
         "language": "jp",
-        "content": "日本語はまだ書いてません"
+        "content": "プロジェクトを紹介する情報をGithubレポジトリ自体に保存し、その情報を読み取るパッケージです"
       }
     ],
     "longDescriptions": [
       {
         "language": "en",
-        "content": "I haven't written a longer description yet..."
+        "content": "Users can create a folder in their public github repository where they store information about their project.\nThis package searches the defined users public repositories for such a folder, and returns that information, as well as direct links to any static files stored there.\nOriginally designed for use in project portfolios."
       },
       {
         "language": "jp",
-        "content": "日本語はまだ書いてません"
+        "content": "Githubに乗せているプロジェクトについての情報をどこかのデータベースにではなく、そのレポジトリ自体に特定のフォルダーに保存します。\nこのパッケージを使えば、その情報やファイルのリンクを読み取ることができます。プロジェクトの紹介などに便利です"
       }
     ],
     "bulletPoints": [
       {
         "language": "en",
         "content": [
-          "Bullet Point 1",
-          "Bullet Point 2",
-          "Bullet Point 3"
+          "Populate a 'project portolio' API with information hosted in that very project's repository.",
+          "Removed the need to manage and constantly update a database and CRUD application for displaying my work.",
+          "Facilitates dynamic population of not only my websites, but my resume as well."
+        ]
+      },
+      {
+        "language": "jp",
+        "content": [
+          "アプリの紹介に使う情報を、そのプロジェクトのレポジトリ自体に保存する",
+          "プロジェクト紹介のためのデータベースやAPIを管理する必要性を取り除く",
+          "ウェブサイトにだけでなく、レジメにまで動的なコンテンツが含まれるようになった"
         ]
       }
     ]
