@@ -18,11 +18,11 @@
     "longDescriptions": [
       {
         "language": "en",
-        "content": "Users can create a folder in their public github repository where they store information about their project.\nThis package searches the defined users public repositories for such a folder, and returns that information, as well as direct links to any static files stored there.\nOriginally designed for use in project portfolios."
+        "content": "Users can create a folder in their public github repository where they store information about their project.\n\nThis package searches the defined users public repositories for such a folder, and returns that information, as well as direct links to any static files stored there.\n\nOriginally designed for use in project portfolios."
       },
       {
         "language": "jp",
-        "content": "Githubに乗せているプロジェクトについての情報をどこかのデータベースにではなく、そのレポジトリ自体に特定のフォルダーに保存します。\nこのパッケージを使えば、その情報やファイルのリンクを読み取ることができます。プロジェクトの紹介などに便利です"
+        "content": "Githubに乗せているプロジェクトについての情報をどこかのデータベースにではなく、そのレポジトリ自体に特定のフォルダーに保存します。\n\nこのパッケージを使えば、その情報やファイルのリンクを読み取ることができます。プロジェクトの紹介などに便利です"
       }
     ],
     "bulletPoints": [
