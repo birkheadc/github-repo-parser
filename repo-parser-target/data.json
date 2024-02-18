@@ -4,6 +4,7 @@
   "source": "https://github.com/birkheadc/github-repo-parser",
   "site": "https://github.com/birkheadc/github-repo-parser",
   "favoriteLevel": 500,
+  "resumeFavoriteLevel": 0,
   "descriptions": {
     "shortDescriptions": [
       {
