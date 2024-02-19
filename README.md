@@ -33,7 +33,7 @@ if (data !== undefined) {
 In order for the package to find and parse your repository, you must do two things:
 
 - First, you must include a keyword in your repository's README. This keyword defaults to `repo-parser-target`, but can be changed to whatever you like by passing a different value to the `root?` option of the constructor's config. Try to use something unique, or the parser might flag repositories you didn't mean it to.
-- Second, you must create folder with the name equal to this keyword. In this folder, create `data.json`, and fill it with the json object you want this repository to return. Also, if you want to host static files, create `files`, and in `files`, create any number of folders for each file type, like `images` or `audio`.
+- Second, you must create a folder with the name equal to this keyword. In this folder, create `data.json`, and fill it with the json object you want this repository to return. Also, if you want to host static files, create `files`, and in `files`, create any number of folders for each file type, like `images` or `audio`.
 
 The end result is that `GithubRepoParser.getAllData([ 'images', 'audio' ])` will return an array of GithubRepoParserResults.
 
